@@ -1,10 +1,10 @@
 ---
 layout: layouts/post.njk
-title: About Me
+title: about me
 tags:
   - nav
 navtitle: About
 templateClass: tmpl-post
 ---
 
-I am a person that writes stuff.
+i'm a little puppy dog baby girl :) pretty much
