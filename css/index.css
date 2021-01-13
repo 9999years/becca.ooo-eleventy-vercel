@@ -15,7 +15,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: sans-serif;
+  font-family: 'Work Sans', sans-serif;
   color: var(--darkgray);
   background-color: var(--white);
 }
@@ -61,7 +61,7 @@ table th {
 
 pre,
 code {
-  font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
+  font-family: monospace;
   line-height: 1.5;
 }
 pre {
@@ -209,7 +209,7 @@ a[href].tag:visited {
 
 /* Direct Links / Markdown Headers */
 .direct-link {
-  font-family: sans-serif;
+  font-family: 'Work Sans', sans-serif;
   text-decoration: none;
   font-style: normal;
   margin-left: .1em;
