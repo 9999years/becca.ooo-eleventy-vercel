@@ -225,3 +225,10 @@ a[href].direct-link:focus:visited,
 :hover > a[href].direct-link:visited {
   color: #aaa;
 }
+
+@media (max-width: 700px) {
+    body,
+    html {
+        font-size: 14px;
+    }
+}
