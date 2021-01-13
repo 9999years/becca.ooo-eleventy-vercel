@@ -8,16 +8,14 @@
   --blue: #082840;
   --white: #fff;
 }
-* {
-  box-sizing: border-box;
-}
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: 'Work Sans', sans-serif;
-  color: var(--darkgray);
-  background-color: var(--white);
+  font-size: 24px;
+  color: #000;
+  background-color: #fff;
 }
 p:last-child {
   margin-bottom: 0;
@@ -25,7 +23,7 @@ p:last-child {
 p,
 .tmpl-post li,
 img {
-  max-width: 37.5em; /* 600px /16 */
+  max-width: 37.5rem; /* 600px /16 */
 }
 p,
 .tmpl-post li {
@@ -44,7 +42,6 @@ main :first-child {
   margin-top: 0;
 }
 header {
-  border-bottom: 1px dashed var(--lightgray);
 }
 header:after {
   content: "";
@@ -52,11 +49,11 @@ header:after {
   clear: both;
 }
 table {
-  margin: 1em 0;
+  margin: 1rem 0;
 }
 table td,
 table th {
-  padding-right: 1em;
+  padding-right: 1rem;
 }
 
 pre,
@@ -65,7 +62,7 @@ code {
   line-height: 1.5;
 }
 pre {
-  font-size: 14px;
+  font-size: 0.9rem;
   line-height: 1.375;
   direction: ltr;
   text-align: left;
@@ -79,13 +76,13 @@ pre {
   -moz-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
-  padding: 1em;
-  margin: .5em 0;
+  padding: 1rem;
+  margin: .5rem 0;
   background-color: #f6f6f6;
 }
 .highlight-line {
   display: block;
-  padding: 0.125em 1em;
+  padding: 0.125rem 1rem;
   text-decoration: none; /* override del, ins, mark defaults */
   color: inherit; /* override del, ins, mark defaults */
 }
@@ -119,7 +116,7 @@ pre {
   padding: 0 1rem;
   float: left;
   margin: 1rem 0; /* 16px /16 */
-  font-size: 1em; /* 16px /16 */
+  font-size: 1rem; /* 16px /16 */
 }
 .home :link:not(:hover) {
   text-decoration: none;
@@ -130,11 +127,11 @@ pre {
   padding: 0;
   list-style: none;
   float: left;
-  margin-left: 1em;
+  margin-left: 1rem;
 }
 .nav-item {
   display: inline-block;
-  margin-right: 1em;
+  margin-right: 1rem;
 }
 .nav-item a[href]:not(:hover) {
   text-decoration: none;
@@ -161,7 +158,7 @@ pre {
 }
 .postlist-date,
 .postlist-item:before {
-  font-size: 0.8125em; /* 13px /16 */
+  font-size: 1rem; /* 13px /16 */
   color: var(--darkgray);
 }
 .postlist-date {
@@ -169,29 +166,33 @@ pre {
 }
 .postlist-link {
   display: inline-block;
-  padding: 0.25em 0.1875em; /* 4px 3px /16 */
+  padding: 0.25rem 0.1875rem; /* 4px 3px /16 */
 }
 .postlist-item-active .postlist-link {
   font-weight: bold;
 }
 .tmpl-home .postlist-link {
-  font-size: 1.1875em; /* 19px /16 */
+  font-size: 1.1875rem; /* 19px /16 */
   font-weight: 700;
 }
 
 
 /* Tags */
 .tag {
+    position: relative;
+    top: -4px;
   display: inline-block;
   vertical-align: text-top;
-  text-transform: uppercase;
-  font-size: 0.625em; /* 10px /16 */
-  padding: 2px 4px;
-  margin-left: 0.8em; /* 8px /10 */
+  font-size: 0.8125rem; /* 13px /16 */
+  padding: 6px 8px;
+  margin-left: 0.8rem; /* 8px /10 */
   background-color: var(--red);
   color: var(--white);
-  border-radius: 0.25em; /* 3px /12 */
+  border-radius: 0.25rem; /* 3px /12 */
   text-decoration: none;
+}
+.tag::before {
+    content: "# ";
 }
 a[href].tag,
 a[href].tag:visited {
@@ -201,7 +202,7 @@ a[href].tag:visited {
 /* Warning */
 .warning {
   background-color: #ffc;
-  padding: 1em 0.625em; /* 16px 10px /16 */
+  padding: 1rem 0.625rem; /* 16px 10px /16 */
 }
 .warning ol:only-child {
   margin: 0;
@@ -212,7 +213,7 @@ a[href].tag:visited {
   font-family: 'Work Sans', sans-serif;
   text-decoration: none;
   font-style: normal;
-  margin-left: .1em;
+  margin-left: .1rem;
 }
 a[href].direct-link,
 a[href].direct-link:visited {
