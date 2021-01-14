@@ -11,11 +11,15 @@ fields:
 - type: datetime
   name: date
   label: date
+  default: now
 - type: list
   name: tags
   label: tags
 - type: text
   name: layout
   label: layout
+  default: post
+  config:
+    required: true
 pages:
 - posts/arfarf.md
